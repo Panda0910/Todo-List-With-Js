@@ -1,0 +1,119 @@
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #c31432; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #240b36,
+    #c31432
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #240b36,
+    #c31432
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.todo {
+  width: 90%;
+  max-width: 45em;
+  background-color: white;
+  padding: 4rem 2rem;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.todo-form h2 {
+  text-align: center;
+  color: #c31432;
+  font-size: 5rem;
+  margin-bottom: 1.6rem;
+}
+
+.todo-form .todo-input {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  border: 1px solid #240b36;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.todo-form .todo-input input {
+  width: 100%;
+  padding: 0.8rem 1.6rem;
+  outline: none;
+  border: 0;
+}
+
+.todo-form .todo-input button {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  background-color: #240b36;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.todo-form .todo-input button ion-icon {
+  font-size: 1.6rem;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-height: 200px;
+  overflow-y: scroll;
+}
+
+.todo-list::-webkit-scrollbar {
+  display: none;
+}
+
+.todo-list .todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(168, 165, 160);
+}
+
+.todo-list .todo-item span {
+  font-size: 1.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  padding: 0.8rem 1.6rem;
+  width: 100%;
+  user-select: none;
+}
+
+.todo-list .todo-item button {
+  font-size: 1.6rem;
+  border: none;
+  outline: none;
+  padding: 0.8rem 1.6rem;
+  background-color: #c31432;
+  color: white;
+  border-radius: 2px;
+  cursor: pointer;
+}
